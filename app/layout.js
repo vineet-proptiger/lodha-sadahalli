@@ -33,8 +33,8 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  title: 'Lodha Sadahalli | Premium 3/4 BHK Homes in Sadahalli, North Bangalore',
-  description: "Lodha Sadahalli — South Bangalore's premier luxury high-rise in Sadahalli, North Bangalore. Premium 3/4 BHK residences starting from ₹3.1 Cr*. Designed for those who demand the extraordinary. MAHARERA: TBD.",
+  title: 'Lodha Sadahalli | Premium 3,3.5&4 BHK Homes in Sadahalli, North Bangalore',
+  description: "Lodha Sadahalli — South Bangalore's premier luxury high-rise in Sadahalli, North Bangalore. Premium 3,3.5 & 4 BHK residences starting from ₹3.1 Cr*. Designed for those who demand the extraordinary.",
 }
 
 export default function RootLayout({ children }) {  
