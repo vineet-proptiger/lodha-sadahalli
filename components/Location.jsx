@@ -8,33 +8,46 @@ const locationCategories = [
   {
     category: 'CONNECTIVITY',
     items: [
-      { name: 'Doddajala Metro Station', dist: '2 Km' },
-      { name: 'NH-44 / Bellary Road', dist: 'Direct Access' },
-      { name: 'Kempegowda Int. Airport', dist: '10 Mins' },
+      { name: 'Sadahalli Gate Bus Station', dist: '2 Mins*' },
+      { name: 'Kempegowda International Airport (KIA)', dist: '10 Mins*' },
+      { name: 'Yelahanka Railway Station', dist: '15 Mins*' },
+      { name: 'Upcoming Doddajala Metro Station', dist: '5 Mins*' },
+      { name: 'Airport Terminal Station (Upcoming)', dist: '10 Mins*' },
+      { name: 'Hebbal', dist: '30 Mins*' },
     ],
   },
   {
-    category: 'BUSINESS HUBS',
+    category: 'EDUCATION HUB',
     items: [
-      { name: 'Prestige Tech Cloud', dist: 'Adjacent' },
-      { name: 'Devanahalli Business Park', dist: '20 Mins' },
-      { name: 'KIADB Aerospace SEZ', dist: '10 Mins' },
+      { name: 'Sir M. Visvesvaraya Institute Of Technology', dist: '10 Mins*' },
+      { name: 'NAFL Emery', dist: '15 Mins*' },
+      { name: 'Stonehill International School', dist: '12 Mins*' },
+      { name: 'Vidyashilp Academy', dist: '18 Mins*' },
     ],
   },
   {
-    category: 'EDUCATION & HEALTHCARE',
+    category: 'HEALTHCARE',
     items: [
-      { name: 'Stonehill International School', dist: 'Near' },
-      { name: 'Aster CMI Hospital', dist: '20 Mins' },
-      { name: 'Canadian International School', dist: 'Close' },
+      { name: 'NRV Hospital', dist: '12 Mins*' },
+      { name: 'Aster CMI Hospital', dist: '20 Mins*' },
+      { name: 'Cytecare Cancer Hospital', dist: '15 Mins*' },
+      { name: 'Manipal Hospital Hebbal', dist: '22 Mins*' },
     ],
   },
   {
-    category: 'LIFESTYLE',
+    category: 'MALLS/ SHOPPING',
     items: [
-      { name: 'Golf View & Lake View Residences', dist: 'On-site' },
-      { name: 'Community With Concierge Services', dist: 'On-site' },
-      { name: 'Premium Clubhouse & Wellness', dist: 'On-site' },
+      { name: 'Upcoming Forum Mall', dist: '5 Mins*' },
+      { name: 'Galleria Mall', dist: '15 Mins*' },
+      { name: 'Phoenix Mall Of Asia', dist: '20 Mins*' },
+      { name: 'D-Mart Devanahalli', dist: '10 Mins*' },
+      { name: 'Ramada By Wyndham Bengaluru Yelahanka', dist: '15 Mins*' },
+    ],
+  },
+  {
+    category: 'TECH PARK',
+    items: [
+      { name: 'Prestige Tech Cloud', dist: '5 Mins*' },
     ],
   },
 ]
