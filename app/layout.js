@@ -34,7 +34,7 @@ const nephilm = localFont({
 
 export const metadata = {
   title: 'Lodha Sadahalli | Premium 3,3.5&4 BHK Homes in Sadahalli, North Bangalore',
-  description: "Lodha Sadahalli — South Bangalore's premier luxury high-rise in Sadahalli, North Bangalore. Premium 3,3.5 & 4 BHK residences starting from ₹3.1 Cr*. Designed for those who demand the extraordinary.",
+  description: "Lodha Sadahalli — North Bangalore's premier luxury high-rise in Sadahalli, North Bangalore. Premium 3,3.5 & 4 BHK residences starting from ₹3.1 Cr*. Designed for those who demand the extraordinary.",
 }
 
 export default function RootLayout({ children }) {  
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
                 "@id": "https://prestigepalmcourtmahalaxmi.in/"
               },
               "headline": "Lodha Sadahalli | Premium 3/4 BHK Homes in Sadahalli, North Bangalore",
-              "description": "Lodha Sadahalli, South Bangalore's premier luxury high-rise in Sadahalli, North Bangalore. Premium 3/4 BHK residences starting from ₹3.1 Cr*. MAHARERA: TBD.",
+              "description": "Lodha Sadahalli, North Bangalore's premier luxury high-rise in Sadahalli, North Bangalore. Premium 3/4 BHK residences starting from ₹3.1 Cr*. MAHARERA: TBD.",
               "image": "https://prestigepalmcourtmahalaxmi.in/_next/image?url=%2Fimages%2Fhero%2Fbanner1.webp&w=1200&q=75",
               "author": {
                 "@type": "Organization",
