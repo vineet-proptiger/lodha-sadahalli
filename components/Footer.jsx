@@ -14,14 +14,14 @@ const Footer = () => (
         Lodha Sadahalli
       </h2>
       <p style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_JOST, fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '12px' }}>
-        Luxury Residences — Sadahalli, North Bangalore, South Bangalore
+        Luxury Residences — Sadahalli, North Bangalore, North Bangalore
       </p>
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
         <span style={{ width: '36px', height: '2.5px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px' }} />
       </div>
       <p style={{ fontSize: '15px', color: '#bbb', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '24px', textAlign: 'justify' }}
         data-aos="fade-in" data-aos-delay="100">
-        Lodha Sadahalli is South Bangalore&apos;s premier luxury high-rise residential development in Sadahalli, North Bangalore, offering premium 3, 3.5 &amp; 4 BHK residences starting from ₹3.1 Cr*. Thoughtfully curated amenities, iconic skyline views, advanced security, and smart home features — Lodha Sadahalli is designed for those who demand the extraordinary.
+        Lodha Sadahalli is North Bangalore&apos;s premier luxury high-rise residential development in Sadahalli, North Bangalore, offering premium 3, 3.5 &amp; 4 BHK residences starting from ₹3.1 Cr*. Thoughtfully curated amenities, iconic skyline views, advanced security, and smart home features — Lodha Sadahalli is designed for those who demand the extraordinary.
       </p>
       
       {/* RERA Block */}

@@ -179,7 +179,7 @@ const Location = () => {
                   color: '#fff', fontSize: '11px', fontFamily: F_JOST,
                   fontWeight: '700', letterSpacing: '0.04em'
                 }}>
-                  Sadahalli, North Bangalore, South Bangalore
+                  Sadahalli, North Bangalore, North Bangalore
                 </span>
               </div>
             </div>
