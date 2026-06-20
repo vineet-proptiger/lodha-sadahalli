@@ -28,9 +28,9 @@ export default function PrivacyPolicy() {
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-[80px]">
           <Link href="/" className="flex items-center">
             <style>{`
-              .privacy-logo { height: 60px; width: auto; display: block; object-fit: contain; transform: scale(1.4, 1.25); transform-origin: left center; }
+              .privacy-logo { height: 48px; width: auto; display: block; object-fit: contain; transform-origin: left center; }
               @media(max-width: 768px) {
-                .privacy-logo { height: 52px; transform: scale(1.3, 1.2); transform-origin: left center; }
+                .privacy-logo { height: 40px; transform-origin: left center; }
               }
             `}</style>
             <img src={logoImages.tarc} alt="Lodha Sadahalli" className="privacy-logo" />

@@ -198,39 +198,45 @@ const Hero = ({ setIsOpen }) => {
           background: #fff;
         }
 
-        /* ─── Tablet ─── */
-        @media (min-width: 768px) and (max-width: 1023px) {
-          .hero-container {
-            aspect-ratio: 16/7;
-          }
-          .slide-layer {
-            position: absolute;
-            height: 100%;
-          }
-          .hero-image {
-            height: 100%;
-            object-fit: cover;
-            object-position: center 80%;
-          }
-          .hero-content {
-            padding: 0 28px 56px !important;
-          }
-        }
+          .desktop-carousel { display: block; }
+          .mobile-hero-image { display: none; }
 
-        /* ─── Mobile ─── */
-        @media (max-width: 767px) {
-          .hero-container {
-            margin-top: 0px !important;
-            padding-top: 80px !important;
-            height: auto !important;
-            display: flex !important;
-            flex-direction: column !important;
-            background: #FFF9E6 !important;
+          /* ─── Tablet ─── */
+          @media (min-width: 768px) and (max-width: 1023px) {
+            .hero-container {
+              aspect-ratio: 16/7;
+            }
+            .slide-layer {
+              position: absolute;
+              height: 100%;
+            }
+            .hero-image {
+              height: 100%;
+              object-fit: cover;
+              object-position: center 80%;
+            }
+            .hero-content {
+              padding: 0 28px 56px !important;
+            }
           }
 
-          .hero-overlay {
-            display: none !important;
-          }
+          /* ─── Mobile ─── */
+          @media (max-width: 767px) {
+            .desktop-carousel { display: none !important; }
+            .mobile-hero-image { display: block !important; width: 100%; height: auto; }
+
+            .hero-container {
+              margin-top: 0px !important;
+              padding-top: 80px !important;
+              height: auto !important;
+              display: flex !important;
+              flex-direction: column !important;
+              background: #FFF9E6 !important;
+            }
+
+            .hero-overlay {
+              display: none !important;
+            }
 
           .hero-content {
             position: relative !important;
@@ -310,25 +316,31 @@ const Hero = ({ setIsOpen }) => {
         }
       `}} />
 
-      {/* ── Slide Wrapper (Grid to stack slides for smooth crossfade) ── */}
-      <div className="hero-slider-wrapper desktop-carousel" style={{ display: 'grid' }}>
-        {slides.map((slide, index) => (
-          <div 
-            key={index} 
-            className={`slide-layer ${index === currentSlide ? 'active' : ''}`}
-            style={{ gridArea: '1 / 1 / 2 / 2' }}
-          >
-            <Image
-              src={slide.img}
-              alt={`Banner ${index + 1}`}
-              width={1920}
-              height={800}
-              className="hero-image"
-              priority={index === 0}
-              sizes="100vw"
-            />
-          </div>
-        ))}
+      {/* ── Video Wrapper ── */}
+      <div className="hero-slider-wrapper desktop-carousel" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={heroImages.banner}
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        >
+          <source src="/images/hero/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      {/* ── Mobile Static Image ── */}
+      <div className="mobile-hero-image">
+        <Image
+          src={heroImages.smDevice}
+          alt="Banner Mobile"
+          width={768}
+          height={800}
+          className="hero-image"
+          priority
+          sizes="100vw"
+        />
       </div>
 
       {/* ── Dark overlay for text legibility ── */}
