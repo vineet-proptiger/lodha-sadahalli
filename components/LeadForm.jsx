@@ -43,7 +43,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
       if (data.status) {
         setSuccess(true)
         if (typeof window !== 'undefined') {
-          localStorage.setItem('_lsub_done', '1')
+          // localStorage.setItem('_lsub_done', '1')
           window.dataLayer = window.dataLayer || []
           const nameParts = formData.fullname.trim().split(' ')
           window.dataLayer.push({
