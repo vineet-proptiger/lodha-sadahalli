@@ -117,12 +117,12 @@ const IconWaves = () => (
 )
 
 const highlights = [
-  { title: 'LOW-DENSITY LIVING', desc: 'Low-density Living for True Exclusivity', Icon: IconTrees },
-  { title: 'GRAND CLUBHOUSE', desc: 'Grand Clubhouse & Wellness Zones', Icon: IconHome },
-  { title: 'LUXURY TOWNSHIP', desc: 'Exclusive Luxury Township in Bangalore', Icon: IconBuilding },
-  { title: 'NEAR FORUM MALL', desc: 'Just 2 mins from upcoming Forum Mall', Icon: IconSmart },
-  { title: 'AIRPORT PROXIMITY', desc: 'Location Proximity to Airport', Icon: IconLightning },
-  { title: 'LIFESTYLE SERVICES', desc: 'Premium Lifestyle Services', Icon: IconSunCloud },
+  { title: 'CASTLE-INSPIRED ARCHITECTURE', desc: 'Timeless Neo-Classical Design Inspired by Scotland', Icon: IconHome },
+  { title: '80-ACRE LUXURY TOWNSHIP', desc: "One of North Bengaluru's Largest Luxury Communities", Icon: IconBuilding },
+  { title: '85% OPEN SPACES', desc: 'Green Boulevards, Landscapes & Open Views', Icon: IconTrees },
+  { title: 'LOW-DENSITY MASTERPLAN', desc: 'Designed for Space, Privacy & Peaceful Living', Icon: IconWind },
+  { title: 'AIRPORT CONNECTIVITY', desc: '10-12 Minutes from Kempegowda International Airport', Icon: IconLightning },
+  { title: 'FUTURE GROWTH LOCATION', desc: 'Close to Aerospace Park, Metro & Business Districts', Icon: IconSmart },
 ]
 
 const Highlights = ({ setIsOpen }) => (

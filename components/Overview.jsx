@@ -60,22 +60,22 @@ const Overview = ({ setIsOpen }) => (
         {/* ── Left Side: Text Content ── */}
         <div className="w-full lg:w-1/2" data-aos="fade-right">
           
-          {/* Paragraphs */}
           <p style={{
             fontFamily: F_SANS, fontSize: '14.5px', color: '#4A4540',
             lineHeight: 1.9,
             marginTop: 0, marginBottom: '20px',
             textAlign: 'justify',
           }}>
-            Welcome to an iconic ultra-luxury township located at Sadahalli, North Bangalore. Spread across 80 acres, this master-planned development features premium 3, 3.5 & 4 BHK residences along with exclusive penthouses and jodi units. Inspired by neo-classical European architecture, the township offers expansive green landscapes, golf and lake view residences, private elevator access, curated wellness spaces, and world-class lifestyle amenities.
+            Welcome to Lodha Sadahalli at Devanahalli, North Bengaluru—an iconic Scottish Castle-inspired luxury township crafted for those who aspire to live exceptionally. Spread across 80 acres, this landmark development draws inspiration from the timeless grandeur of Scotland's Balmoral Castle, blending neo-classical architecture with modern luxury. Discover spacious 3 & 4 BHK residences set amidst 85% open green spaces, landscaped gardens, and curated lifestyle experiences. Enjoy world-class amenities, a grand clubhouse, Saint Amand-managed hospitality services, and seamless connectivity to Kempegowda International Airport. Located in North Bengaluru's thriving growth corridor, Lodha Sadahalli offers the perfect balance of exclusivity, elegance, and future-ready living.
           </p>
           <p style={{
             fontFamily: F_SANS, fontSize: '14.5px', color: '#4A4540',
             lineHeight: 1.9,
             marginTop: 0, marginBottom: '32px',
             textAlign: 'justify',
+            fontWeight: 'bold',
           }}>
-            Strategically positioned near Doddajala Metro Station and Kempegowda International Airport, the project ensures seamless connectivity to major business hubs, schools, hospitals, and entertainment destinations.
+            Register Your Interest Today to Access Pre-Launch Pricing, Exclusive Offers &amp; Priority Unit Selection.
           </p>
 
           {/* Info Box */}

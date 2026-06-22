@@ -362,10 +362,10 @@ const Hero = ({ setIsOpen }) => {
           <div className="hero-bullets" style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {[
               '80 Acre Ultra Luxury Township',
-              '3, 3.5, 4 BHK Residences',
+              'North Bengaluru Fastest Growing Corridor',
               // '10 Mins From Airport',
               '85% Open & Green Spaces',
-              'Adjacent To Prestige Tech Cloud',
+              'Near Kempegowda International Airport',
               'Neo-Classical European Architecture'
             ].map((text, i) => (
             <div key={i} className="hero-bullet-item" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>

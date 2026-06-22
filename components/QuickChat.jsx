@@ -62,13 +62,13 @@ export default function QuickChat() {
             
             <div className="flex flex-wrap justify-start gap-1.5 sm:gap-2.5">
               {[
-                {text: "💰 Current price band", link: "https://wa.me/919718344024?text=Hi%2C%20I%20want%20the%20current%20price%20band%20for%20Lodha%20Sadahalli%20Financial%20District."},
+                {text: "💰 Current price band", link: "https://wa.me/919718344024?text=Hi%2C%20I%20want%20the%20current%20price%20band%20for%20Lodha%20Sadahalli."},
                 {text: "📄 3, 3.5 & 4 BHK floor plan", link: "https://wa.me/919718344024?text=Hi%2C%20please%20send%20me%20the%203%2C%203.5%20and%204%20BHK%20floor%20plan%20for%20Lodha%20Sadahalli."},
-                {text: "🚗 Book a site visit", link: "https://wa.me/919718344024?text=Hi%2C%20I%20want%20to%20book%20a%20site%20visit%20for%20Lodha%20Sadahalli%2C%20Financial%20District%20Bangalore.%20My%20preferred%20day%20is%3A"},
+                {text: "🚗 Book a site visit", link: "https://wa.me/919718344024?text=Hi%2C%20I%20want%20to%20book%20a%20site%20visit%20for%20Lodha%20Sadahalli."},
                 {text: "🌍 NRI investment guide", link: "https://wa.me/919718344024?text=Hi%2C%20I%20am%20an%20NRI%20buyer%20%E2%80%94%20please%20share%20the%20Lodha%20Sadahalli%20NRI%20investment%20guide."},
                 {text: "📐 Payment plan", link: "https://wa.me/919718344024?text=Hi%2C%20please%20share%20the%20Lodha%20Sadahalli%20payment%20plan%20and%20instalment%20schedule."},
                 {text: "📄 Send brochure (PDF)", link: "https://wa.me/919718344024?text=Hi%2C%20please%20share%20the%20Lodha%20Sadahalli%20brochure%20and%20official%20PDF."},
-                {text: "📞 Request a callback", link: "https://wa.me/919718344024?text=Hi%2C%20please%20schedule%20a%20callback%20for%20Lodha%20Sadahalli.%20My%20preferred%20time%20is%3A"}
+                {text: "📞 Request a callback", link: "https://wa.me/919718344024?text=Hi%2C%20please%20schedule%20a%20callback%20for%20Lodha%20Sadahalli."}
               ].map((pill, i) => (
                 <a key={i} href={pill.link} target="_blank" rel="noopener noreferrer" 
                    className="bg-white text-[#005B4F] text-[10.5px] sm:text-[13px] font-medium px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-full border border-[#25D366] shadow-sm hover:bg-[#005B4F] hover:text-white hover:border-[#005B4F] hover:shadow-md transition-all duration-300 whitespace-nowrap">
