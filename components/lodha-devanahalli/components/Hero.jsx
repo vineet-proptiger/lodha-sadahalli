@@ -213,8 +213,8 @@ export default function Hero({ setIsOpen }) {
           }}>
             {[
               { val: '80', lbl: 'Acres\nTownship' },
-              { val: '3, 3.5 & 4 BHK', lbl: 'Residences' },
-              { val: 'Adjacent\nAirport', lbl: 'Location\nAdvantage' },
+              { val: '3, 3.5 & 4 BHK', lbl: 'Ultra Luxury Aprt' },
+              { val: 'Adjacent To Airport', lbl: 'Location\nAdvantage' },
               { val: '₹3.1 Cr*', lbl: 'Starting\nPrice' },
             ].map((s, i) => (
               <div key={i} style={{
