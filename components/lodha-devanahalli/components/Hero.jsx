@@ -258,9 +258,9 @@ export default function Hero({ setIsOpen }) {
             display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '20px',
           }}>
             <div style={{ textAlign: 'center', marginBottom: '10px' }}>
-              <p style={{ fontFamily: F_SANS, fontSize: '14px', fontWeight: 700, color: '#FFD700', letterSpacing: '0.06em', background: 'rgba(0,0,0,0.35)', padding: '10px 16px', borderRadius: '6px', display: 'inline-block', border: '1px solid rgba(255, 215, 0, 0.2)' }}>
+              <p style={{ whiteSpace: 'nowrap', fontFamily: F_SANS, fontSize: '14px', fontWeight: 700, color: '#FFD700', letterSpacing: '0.06em', background: 'rgba(0,0,0,0.35)', padding: '10px 16px', borderRadius: '6px', display: 'inline-block', border: '1px solid rgba(255, 215, 0, 0.2)' }}>
                 EOI Window Now Open With<br/>
-                <span style={{ color: '#fff', fontSize: '16px', marginTop: '4px', display: 'block' }}>Priority Allotment <br />₹10 Lacs*</span>
+                <span style={{ color: '#fff', fontSize: '16px', marginTop: '4px', display: 'block', whiteSpace: 'normal' }}>Priority Allotment <br />₹10 Lacs*</span>
               </p>
             </div>
 
