@@ -135,20 +135,18 @@ export default function Hero({ setIsOpen }) {
           </nav>
 
           {/* Project title overlaid on image */}
-          <div style={{
+          <div className="px-5 pb-5 sm:px-10 sm:pb-[22px] w-full text-left" style={{
             position: 'absolute', bottom: 0, left: 0, zIndex: 5,
-            padding: '0 40px 22px',
             animation: 'heroRiseUp 0.9s 0.3s cubic-bezier(0.16,1,0.3,1) both',
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+            {/* <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
               <span style={{ display: 'block', width: '28px', height: '1px', background: 'var(--color-gold)', opacity: 0.8 }} />
               <span style={{ fontFamily: F_SANS, fontSize: '10px', fontWeight: 600, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#4ade80' }}>
                 Sadahalli, North Bangalore
               </span>
-            </div>
-            <h1 style={{
+            </div> */}
+            <h1 className="text-[24px] sm:text-[clamp(28px,3.4vw,52px)]" style={{
               fontFamily: F_JOST,
-              fontSize: 'clamp(28px, 3.4vw, 52px)',
               fontWeight: 800, color: '#fff', lineHeight: 1.05, letterSpacing: '-0.02em',
             }}>
               Lodha <span style={{ color: '#ffffff' }}>Sadahalli</span>
@@ -193,13 +191,13 @@ export default function Hero({ setIsOpen }) {
               ].map((b, i) => (
                 <div key={i} style={{
                   flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px',
-                  padding: '14px 8px',
-                  border: '1px solid rgba(255,255,255,0.07)',
+                  padding: '10px 6px',
+                  border: '1px solid rgba(255,255,255,0.15)',
                   borderRadius: '6px',
-                  background: 'rgba(255,255,255,0.04)',
+                  background: 'rgba(255,255,255,0.1)',
                 }}>
-                  <span style={{ fontSize: '13px', lineHeight: 1 }}>{b.icon}</span>
-                  <span style={{ fontFamily: F_SANS, fontSize: '9px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)', textAlign: 'center', lineHeight: 1.2, whiteSpace: 'pre-line' }}>{b.label}</span>
+                  <span style={{ fontSize: '14px', lineHeight: 1 }}>{b.icon}</span>
+                  <span style={{ fontFamily: F_SANS, fontSize: '10px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.9)', textAlign: 'center', lineHeight: 1.2, whiteSpace: 'pre-line' }}>{b.label}</span>
                 </div>
               ))}
             </div>
@@ -261,7 +259,7 @@ export default function Hero({ setIsOpen }) {
           }}>
             <div style={{ textAlign: 'center', marginBottom: '10px' }}>
               <p style={{ fontFamily: F_SANS, fontSize: '14px', fontWeight: 700, color: '#FFD700', letterSpacing: '0.06em', background: 'rgba(0,0,0,0.35)', padding: '10px 16px', borderRadius: '6px', display: 'inline-block', border: '1px solid rgba(255, 215, 0, 0.2)' }}>
-                EOI Window Now Open<br/>
+                EOI Window Now Open With<br/>
                 <span style={{ color: '#fff', fontSize: '16px', marginTop: '4px', display: 'block' }}>Priority Allotment <br />₹10 Lacs*</span>
               </p>
             </div>
