@@ -210,13 +210,13 @@ export default function Hero({ setIsOpen }) {
             borderRight: '1px solid rgba(20,17,13,0.1)',
           }}>
             {[
-              { val: '80', lbl: 'Acres\nTownship' },
+              { val: '80', lbl: 'Acres Township' },
               { val: '3, 3.5 & 4 BHK', lbl: 'Ultra Luxury Aprt' },
-              { val: 'Adjacent To Airport', lbl: 'Location\nAdvantage' },
-              { val: '₹3.1 Cr*', lbl: 'Starting\nPrice' },
+              { val: 'Adjacent To Airport', lbl: 'Location Advantage' },
+              { val: '₹3.1 Cr*', lbl: 'Starting Price' },
             ].map((s, i) => (
               <div key={i} style={{
-                padding: '22px 28px',
+                padding: '22px 20px',
                 display: 'flex', flexDirection: 'column', justifyContent: 'center',
                 borderRight: i % 2 === 0 ? '1px solid rgba(20,17,13,0.1)' : 'none',
                 borderBottom: i < 2 ? '1px solid rgba(20,17,13,0.1)' : 'none',
@@ -224,7 +224,7 @@ export default function Hero({ setIsOpen }) {
                 cursor: 'default',
               }}>
                 <p style={{ fontFamily: F_JOST, fontSize: '20px', fontWeight: 700, color: 'var(--color-dark)', lineHeight: 1, marginBottom: '8px' }}>{s.val}</p>
-                <p style={{ fontFamily: F_SANS, fontSize: '9px', fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'var(--color-muted, #7A7268)', lineHeight: 1.35, whiteSpace: 'pre-line' }}>{s.lbl}</p>
+                <p style={{ fontFamily: F_SANS, fontSize: '9px', fontWeight: 700, letterSpacing: '0.13em', textTransform: 'uppercase', color: 'var(--color-muted, #7A7268)', lineHeight: 1.35, whiteSpace: 'nowrap' }}>{s.lbl}</p>
               </div>
             ))}
           </div>

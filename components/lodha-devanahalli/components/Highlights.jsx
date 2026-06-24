@@ -10,27 +10,27 @@ const highlightIconProps = { size: 26, strokeWidth: 1.5 }
 
 const highlights = [
   {
-    text: <>CASTLE-INSPIRED ARCHITECTURE<br /><span style={{ fontSize: '11.5px', fontWeight: 500, opacity: 0.85, marginTop: '2px', display: 'block' }}>Timeless Neo-Classical Design Inspired by Scotland</span></>,
+    text: <>CASTLE-INSPIRED ARCHITECTURE<br /><span style={{ color: '#4b5563', fontSize: '11.5px', fontWeight: 500, marginTop: '2px', display: 'block' }}>Timeless Neo-Classical Design Inspired by Scotland</span></>,
     icon: <Trophy {...highlightIconProps} />,
   },
   {
-    text: <>80-ACRE LUXURY TOWNSHIP<br /><span style={{ fontSize: '11.5px', fontWeight: 500, opacity: 0.85, marginTop: '2px', display: 'block' }}>One of North Bengaluru's Largest Luxury Communities</span></>,
+    text: <>80-ACRE LUXURY TOWNSHIP<br /><span style={{ color: '#4b5563', fontSize: '11.5px', fontWeight: 500, marginTop: '2px', display: 'block' }}>One of North Bengaluru's Largest Luxury Communities</span></>,
     icon: <Building {...highlightIconProps} />,
   },
   {
-    text: <>85% OPEN SPACES<br /><span style={{ fontSize: '11.5px', fontWeight: 500, opacity: 0.85, marginTop: '2px', display: 'block' }}>Green Boulevards, Landscapes & Open Views</span></>,
+    text: <>85% OPEN SPACES<br /><span style={{ color: '#4b5563', fontSize: '11.5px', fontWeight: 500, marginTop: '2px', display: 'block' }}>Green Boulevards, Landscapes & Open Views</span></>,
     icon: <Trees {...highlightIconProps} />,
   },
   {
-    text: <>LOW-DENSITY MASTERPLAN<br /><span style={{ fontSize: '11.5px', fontWeight: 500, opacity: 0.85, marginTop: '2px', display: 'block' }}>Designed for Space, Privacy & Peaceful Living</span></>,
+    text: <>LOW-DENSITY MASTERPLAN<br /><span style={{ color: '#4b5563', fontSize: '11.5px', fontWeight: 500, marginTop: '2px', display: 'block' }}>Designed for Space, Privacy & Peaceful Living</span></>,
     icon: <ShieldCheck {...highlightIconProps} />,
   },
   {
-    text: <>AIRPORT CONNECTIVITY<br /><span style={{ fontSize: '11.5px', fontWeight: 500, opacity: 0.85, marginTop: '2px', display: 'block' }}>10-12 Minutes from Kempegowda International Airport</span></>,
+    text: <>AIRPORT CONNECTIVITY<br /><span style={{ color: '#4b5563', fontSize: '11.5px', fontWeight: 500, marginTop: '2px', display: 'block' }}>10-12 Minutes from Kempegowda International Airport</span></>,
     icon: <Plane {...highlightIconProps} />,
   },
   {
-    text: <>FUTURE GROWTH LOCATION<br /><span style={{ fontSize: '11.5px', fontWeight: 500, opacity: 0.85, marginTop: '2px', display: 'block' }}>Close to Aerospace Park, Metro & Business Districts</span></>,
+    text: <>FUTURE GROWTH LOCATION<br /><span style={{ color: '#4b5563', fontSize: '11.5px', fontWeight: 500, marginTop: '2px', display: 'block' }}>Close to Aerospace Park, Metro & Business Districts</span></>,
     icon: <ShoppingBag {...highlightIconProps} />,
   },
 ]
@@ -92,8 +92,8 @@ const HighlightCard = ({ item, idx, setIsOpen }) => {
         fontFamily: F_SANS,
         fontSize: '13px',
         lineHeight: 1.6,
-        color: 'var(--color-gold)',
-        fontWeight: '600',
+        color: '#111827',
+        fontWeight: '700',
         margin: 0,
         transition: 'color 0.28s ease',
         textAlign: 'center',
