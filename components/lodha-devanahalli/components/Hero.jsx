@@ -42,9 +42,9 @@ export default function Hero({ setIsOpen }) {
         @keyframes heroRiseUp   { from{opacity:0;transform:translateY(22px)}  to{opacity:1;transform:translateY(0)} }
         @keyframes heroSlideUp  { from{opacity:0;transform:translateY(30px)}  to{opacity:1;transform:translateY(0)} }
         @keyframes livepulse {
-          0%  { box-shadow:0 0 0 0 rgba(74,222,128,0.6); }
-          70% { box-shadow:0 0 0 6px rgba(74,222,128,0); }
-          100%{ box-shadow:0 0 0 0 rgba(74,222,128,0); }
+          0%  { box-shadow:0 0 0 0 rgba(212,175,55,0.6); }
+          70% { box-shadow:0 0 0 6px rgba(212,175,55,0); }
+          100%{ box-shadow:0 0 0 0 rgba(212,175,55,0); }
         }
         
         .desktop-carousel { display: block; position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -141,7 +141,7 @@ export default function Hero({ setIsOpen }) {
           }}>
             {/* <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
               <span style={{ display: 'block', width: '28px', height: '1px', background: 'var(--color-gold)', opacity: 0.8 }} />
-              <span style={{ fontFamily: F_SANS, fontSize: '10px', fontWeight: 600, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#4ade80' }}>
+              <span style={{ fontFamily: F_SANS, fontSize: '10px', fontWeight: 600, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--color-gold)' }}>
                 Sadahalli, North Bangalore
               </span>
             </div> */}
@@ -177,9 +177,9 @@ export default function Hero({ setIsOpen }) {
           }}>
             <p style={{ fontFamily: F_SANS, fontSize: '13px', lineHeight: 1.6, color: '#ffffff', fontWeight: 300 }}>
               A thoughtfully crafted residential development by{' '}
-              <span style={{ color: '#4ade80', fontWeight: 600 }}>Lodha Group</span> — neo-classical European architecture with
+              <span style={{ color: 'var(--color-gold)', fontWeight: 600 }}>Lodha Group</span> — neo-classical European architecture with
               85% open &amp; green spaces at{' '}
-              <span style={{ color: '#4ade80', fontWeight: 600 }}>Sadahalli, North Bangalore</span>.
+              <span style={{ color: 'var(--color-gold)', fontWeight: 600 }}>Sadahalli, North Bangalore</span>.
             </p>
 
             {/* Trust badges */}

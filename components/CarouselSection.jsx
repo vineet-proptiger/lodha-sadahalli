@@ -7,8 +7,11 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
 
 const CarouselSection = ({ setIsOpen }) => {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(1)
+  const [isTransitioning, setIsTransitioning] = useState(true)
   const [selectedImgIndex, setSelectedImgIndex] = useState(null)
+
+  const items = [galleryImages[galleryImages.length - 1], ...galleryImages, galleryImages[0]]
 
   // Keyboard navigation for Lightbox
   useEffect(() => {
@@ -33,17 +36,38 @@ const CarouselSection = ({ setIsOpen }) => {
   }
 
   const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % galleryImages.length)
+    if (index >= items.length - 1) return
+    setIsTransitioning(true)
+    setIndex((prev) => prev + 1)
   }
 
   const prevSlide = () => {
-    setIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)
+    if (index <= 0) return
+    setIsTransitioning(true)
+    setIndex((prev) => prev - 1)
   }
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 4000) // Autoplay every 4s
-    return () => clearInterval(timer)
-  }, [index])
+    if (index === items.length - 1) {
+      const timeout = setTimeout(() => {
+        setIsTransitioning(false)
+        setIndex(1)
+      }, 700)
+      return () => clearTimeout(timeout)
+    }
+    if (index === 0) {
+      const timeout = setTimeout(() => {
+        setIsTransitioning(false)
+        setIndex(items.length - 2)
+      }, 700)
+      return () => clearTimeout(timeout)
+    }
+  }, [index, items.length])
+
+  useEffect(() => {
+    const timer = setTimeout(nextSlide, 4000) // Autoplay every 4s
+    return () => clearTimeout(timer)
+  }, [index, items.length])
 
   return (
     <section id="homes-designed" style={{
@@ -95,25 +119,27 @@ const CarouselSection = ({ setIsOpen }) => {
             @media (min-width: 768px) { .carousel-container { --slide-w: 65%; } }
           `}} />
           <div 
-            className="flex w-full transition-transform duration-700 ease-in-out"
+            className={`flex w-full ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
             style={{ 
               transform: `translateX(calc(-${index} * (var(--slide-w) + 16px)))`,
               willChange: 'transform',
               gap: '16px'
             }}
           >
-            {galleryImages.map((img, idx) => (
+            {items.map((img, idx) => {
+              const realIdx = idx === 0 ? galleryImages.length - 1 : idx === items.length - 1 ? 0 : idx - 1;
+              return (
               <div 
                 key={idx} 
                 className="relative flex-shrink-0 group overflow-hidden bg-gray-200 cursor-pointer"
                 style={{ width: 'var(--slide-w)', aspectRatio: '16/9' }}
-                onClick={() => setSelectedImgIndex(idx)}
+                onClick={() => setSelectedImgIndex(realIdx)}
               >
                 <Image
                   src={img.src}
-                  alt={img.alt || `Gallery Image ${idx + 1}`}
+                  alt={img.alt || `Gallery Image ${realIdx + 1}`}
                   fill
-                  priority={idx === 0 || idx === 1 || Math.abs(idx - index) <= 1} // Preload active and adjacent images for instant rendering
+                  priority={idx === 0 || idx === 1 || Math.abs(idx - index) <= 1}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 65vw, 900px"
                   className="object-cover select-none pointer-events-none transition-transform duration-[800ms] ease-out group-hover:scale-110"
                 />
@@ -126,7 +152,7 @@ const CarouselSection = ({ setIsOpen }) => {
                     
                     {/* Progress Bar Container */}
                     <div className="absolute bottom-0 left-0 right-0 h-1 md:h-1.5 bg-white/20">
-                      {idx === index && (
+                      {idx === index && isTransitioning && (
                         <div 
                           className="h-full bg-white" 
                           style={{
@@ -146,7 +172,7 @@ const CarouselSection = ({ setIsOpen }) => {
                   Artistic Impression
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
 

@@ -12,7 +12,7 @@ const Footer = () => (
       <h2 style={{ fontSize: '24px', fontWeight: '800', fontFamily: F_JOST, marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.05em' }} data-aos="fade-in">
         Lodha Sadahalli
       </h2>
-      <p style={{ fontSize: '13px', color: '#4ade80', fontFamily: F_JOST, fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '12px' }}>
+      <p style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_JOST, fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '12px' }}>
         Luxury Residences — Sadahalli, North Bangalore
       </p>
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
@@ -35,7 +35,7 @@ const Footer = () => (
         &copy; 2026 Lodha Sadahalli. All rights reserved.
       </p>
       <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
-        <Link href="/lodha-devanahalli/privacy-policy" style={{ fontSize: '13px', color: '#4ade80', fontFamily: F_SANS }}>
+        <Link href="/lodha-devanahalli/privacy-policy" style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_SANS }}>
           Privacy Policy
         </Link>
       </div>

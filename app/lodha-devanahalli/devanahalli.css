@@ -9,13 +9,13 @@
    ═══════════════════════════════════════════════════════════════ */
 :root {
   /* ── Green Accent Palette ── */
-  --color-gold: #0C693A;
+  --color-gold: #D4AF37;
   /* Primary accent color */
-  --color-gold-light: #1A8A50;
+  --color-gold-light: #F9E08A;
   /* Lighter vibrant variant */
-  --color-gold-dark: #084D2B;
+  --color-gold-dark: #AA8C2C;
   /* Deeper variant  */
-  --color-gold-bg: #E8F5EE;
+  --color-gold-bg: rgba(212, 175, 55, 0.1);
   /* Tinted background variant */
 
   /* ── Charcoal Gray Primary Palette ── */
@@ -41,11 +41,11 @@
   --btn-radius-pill: 50px;
 
   /* ── Shadows ── */
-  --shadow-sm: 0 2px 8px rgba(12, 105, 58, 0.08);
-  --shadow-md: 0 8px 24px rgba(12, 105, 58, 0.14);
-  --shadow-lg: 0 20px 48px rgba(12, 105, 58, 0.18);
+  --shadow-sm: 0 2px 8px rgba(212, 175, 55, 0.08);
+  --shadow-md: 0 8px 24px rgba(212, 175, 55, 0.14);
+  --shadow-lg: 0 20px 48px rgba(212, 175, 55, 0.18);
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.07);
-  --color-shadow-inner: rgba(12, 105, 58, 0.10);
+  --color-shadow-inner: rgba(212, 175, 55, 0.10);
 }
 
 /* ─── Keyframes ─────────────────────────────────────────────── */
@@ -92,11 +92,11 @@
 
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(12, 105, 58, 0.5);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5);
   }
 
   50% {
-    box-shadow: 0 0 0 10px rgba(12, 105, 58, 0);
+    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
   }
 }
 
@@ -126,11 +126,11 @@
 
   0%,
   100% {
-    border-color: rgba(12, 105, 58, 0.4);
+    border-color: rgba(212, 175, 55, 0.4);
   }
 
   50% {
-    border-color: rgba(12, 105, 58, 1);
+    border-color: rgba(212, 175, 55, 1);
   }
 }
 
@@ -225,7 +225,7 @@
 
   /* ── Theme selection ── */
   ::selection {
-    background: rgba(12, 105, 58, 0.15);
+    background: rgba(212, 175, 55, 0.15);
     color: var(--color-gold-dark);
   }
 }
@@ -252,7 +252,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    box-shadow: 0 4px 14px rgba(12, 105, 58, 0.35);
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
     text-transform: uppercase;
     white-space: nowrap;
   }
@@ -279,12 +279,12 @@
     color: var(--color-gold) !important;
     border-color: var(--color-gold);
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(12, 105, 58, 0.30);
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.30);
   }
 
   .btn-gold:active {
     transform: translateY(0);
-    box-shadow: 0 4px 10px rgba(12, 105, 58, 0.20);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.20);
   }
 
   /* ══ OUTLINED RED BUTTON ══ */
@@ -314,7 +314,7 @@
     background: var(--color-gold) !important;
     color: #ffffff !important;
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(12, 105, 58, 0.30);
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.30);
   }
 
   /* ══ DARK PRIMARY BUTTON (Now Gold Theme) ══ */
@@ -336,7 +336,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    box-shadow: 0 4px 14px rgba(12, 105, 58, 0.35);
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
     text-transform: uppercase;
     white-space: nowrap;
   }
@@ -346,12 +346,12 @@
     color: var(--color-gold) !important;
     border-color: var(--color-gold);
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(12, 105, 58, 0.30);
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.30);
   }
 
   .btn-primary:active {
     transform: translateY(0);
-    box-shadow: 0 4px 10px rgba(12, 105, 58, 0.20);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.20);
   }
 
   /* ══ FLOATING TAB ══ */
@@ -367,7 +367,7 @@
     padding: 16px 10px;
     font-size: 12px;
     letter-spacing: 0.08em;
-    box-shadow: -4px 0 18px rgba(12, 105, 58, 0.28);
+    box-shadow: -4px 0 18px rgba(212, 175, 55, 0.28);
   }
 
   .btn-floating-tab:hover {
@@ -375,7 +375,7 @@
     background: #fff !important;
     color: var(--color-gold) !important;
     border-color: var(--color-gold);
-    box-shadow: -6px 0 24px rgba(12, 105, 58, 0.35);
+    box-shadow: -6px 0 24px rgba(212, 175, 55, 0.35);
   }
 
   /* ══ SECTION TITLE ══ */
@@ -414,7 +414,7 @@
 
   .form-input:focus {
     border-color: var(--color-gold);
-    box-shadow: 0 0 0 3px rgba(12, 105, 58, 0.10), inset 0 1px 3px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.10), inset 0 1px 3px rgba(0, 0, 0, 0.04);
   }
 
   .form-input::placeholder {
@@ -469,7 +469,7 @@
   .pricing-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
-    border-color: rgba(12, 105, 58, 0.25);
+    border-color: rgba(212, 175, 55, 0.25);
   }
 
   .pricing-card:hover::after {
@@ -492,7 +492,7 @@
 
   .highlight-card:hover {
     border-color: var(--color-gold);
-    box-shadow: 0 8px 28px rgba(12, 105, 58, 0.15);
+    box-shadow: 0 8px 28px rgba(212, 175, 55, 0.15);
     transform: translateY(-4px);
   }
 
@@ -514,7 +514,7 @@
     border-color: var(--color-gold);
     background: var(--color-gold-bg);
     color: var(--color-gold);
-    box-shadow: 0 0 0 6px rgba(12, 105, 58, 0.08);
+    box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.08);
   }
 
   /* ══ SECTION WRAPPER — white card on diamond bg ══ */
@@ -547,7 +547,7 @@
   right: 0;
   z-index: 999;
   display: flex;
-  box-shadow: 0 -4px 20px rgba(12, 105, 58, 0.18);
+  box-shadow: 0 -4px 20px rgba(212, 175, 55, 0.18);
 }
 
 @media (min-width: 1024px) {
@@ -561,29 +561,29 @@ nav.fixed {
   background: rgba(255, 255, 255, 0.96) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(12, 105, 58, 0.08);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.08);
 }
 
 /* ─── Teal-Cyan focus ring globally ─────────────────────────────────── */
 *:focus-visible {
-  outline: 2px solid rgba(12, 105, 58, 0.5);
+  outline: 2px solid rgba(212, 175, 55, 0.5);
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 /* ─── OVERRIDE ROOT GLOBALS.CSS IMPORTANT RULES ───────────────── */
 /* The main globals.css forces gold gradients and concave notches using !important.
-   We must override them here to restore the green pill design for this slug. */
+   We override them here to keep the pill design but apply the gradient color theme. */
 @layer components {
   .btn-gold, .btn-gold-outline, .btn-primary, .btn-brand, .btn-floating-tab {
-    background: var(--color-gold) !important;
-    color: #ffffff !important;
+    background: linear-gradient(90deg, #D4AF37 0%, #F9E08A 100%) !important;
+    color: #111827 !important;
     border: 2px solid var(--color-gold) !important;
     border-radius: var(--btn-radius-pill) !important;
     font-weight: 700 !important;
     -webkit-mask: none !important;
     mask: none !important;
-    box-shadow: 0 4px 14px rgba(12, 105, 58, 0.35) !important;
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35) !important;
     filter: none !important;
   }
 
@@ -591,7 +591,7 @@ nav.fixed {
     background: #ffffff !important;
     color: var(--color-gold) !important;
     border-color: var(--color-gold) !important;
-    box-shadow: 0 12px 28px rgba(12, 105, 58, 0.30) !important;
+    box-shadow: 0 12px 28px rgba(212, 175, 55, 0.30) !important;
   }
 
   .btn-gold-outline {
@@ -599,18 +599,19 @@ nav.fixed {
     color: var(--color-gold) !important;
   }
   .btn-gold-outline:hover {
-    background: var(--color-gold) !important;
-    color: #ffffff !important;
+    background: linear-gradient(90deg, #D4AF37 0%, #F9E08A 100%) !important;
+    color: #111827 !important;
   }
 
   .btn-floating-tab {
     border-radius: 8px 0 0 8px !important;
-    box-shadow: -4px 0 18px rgba(12, 105, 58, 0.28) !important;
+    box-shadow: -4px 0 18px rgba(212, 175, 55, 0.28) !important;
   }
   .btn-floating-tab:hover {
     background: #ffffff !important;
     color: var(--color-gold) !important;
-    box-shadow: -6px 0 24px rgba(12, 105, 58, 0.35) !important;
+    box-shadow: -6px 0 24px rgba(212, 175, 55, 0.35) !important;
   }
 }
+
 
