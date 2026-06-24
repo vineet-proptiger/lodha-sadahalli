@@ -14,7 +14,6 @@ const navLinks = [
   { name: 'Price', href: '#pricing' },
   { name: 'Location', href: '#location' },
   { name: 'Floor Plan', href: '#masterplan' },
-  { name: 'Developer', href: '#developer' },
 ]
 
 /* ── Inline SVG Logo ─────────────────────────────────────────── */
@@ -22,7 +21,7 @@ const ProjectLogo = () => (
   <Image
     src={logoImages.tarc}
     alt="Lodha Sadahalli"
-    className="h-8 md:h-12 w-auto object-contain transition-all"
+    className="h-[31px] md:h-[47px] w-auto object-contain transition-all"
     style={{ maxWidth: '200px' }}
     width={200}
     height={48}
