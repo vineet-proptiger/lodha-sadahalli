@@ -21,7 +21,7 @@ export default function QuickChat() {
           </span>
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '700', fontSize: '18px',
-            color: '#3A3B3C', letterSpacing: '0.22em', textTransform: 'uppercase', margin: 0,
+            color: '#3A3B3C', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0,
             display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap'
           }}>
             Reply in one tap — get it on WhatsApp
