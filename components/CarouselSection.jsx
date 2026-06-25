@@ -10,8 +10,21 @@ const CarouselSection = ({ setIsOpen }) => {
   const [index, setIndex] = useState(1)
   const [isTransitioning, setIsTransitioning] = useState(true)
   const [selectedImgIndex, setSelectedImgIndex] = useState(null)
+  const [userInteracted, setUserInteracted] = useState(0)
 
-  const items = [galleryImages[galleryImages.length - 1], ...galleryImages, galleryImages[0]]
+  const numItems = galleryImages.length;
+  const extendedImages = [
+    galleryImages[numItems - 1],
+    ...galleryImages,
+    galleryImages[0],
+    galleryImages[1]
+  ].filter(Boolean);
+
+  const getRealIndex = (idx) => {
+    if (idx === 0) return numItems - 1;
+    if (idx >= numItems + 1) return (idx - 1) % numItems;
+    return idx - 1;
+  };
 
   // Keyboard navigation for Lightbox
   useEffect(() => {
@@ -36,38 +49,52 @@ const CarouselSection = ({ setIsOpen }) => {
   }
 
   const nextSlide = () => {
-    if (index >= items.length - 1) return
-    setIsTransitioning(true)
-    setIndex((prev) => prev + 1)
+    if (!isTransitioning) return;
+    setIndex((prev) => prev + 1);
+    setUserInteracted(Date.now());
   }
 
   const prevSlide = () => {
-    if (index <= 0) return
-    setIsTransitioning(true)
-    setIndex((prev) => prev - 1)
+    if (!isTransitioning) return;
+    setIndex((prev) => prev - 1);
+    setUserInteracted(Date.now());
   }
 
   useEffect(() => {
-    if (index === items.length - 1) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(false)
-        setIndex(1)
-      }, 700)
-      return () => clearTimeout(timeout)
-    }
-    if (index === 0) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(false)
-        setIndex(items.length - 2)
-      }, 700)
-      return () => clearTimeout(timeout)
-    }
-  }, [index, items.length])
+    const timer = setInterval(() => {
+      setIndex((prev) => prev + 1);
+    }, 4000); // Autoplay every 4s
+    return () => clearInterval(timer);
+  }, [userInteracted]);
 
+  // Handle the seamless jump
   useEffect(() => {
-    const timer = setTimeout(nextSlide, 4000) // Autoplay every 4s
-    return () => clearTimeout(timer)
-  }, [index, items.length])
+    let timeout;
+    if (index === 0) {
+      timeout = setTimeout(() => {
+        setIsTransitioning(false);
+        setIndex(numItems);
+      }, 700);
+    } else if (index === numItems + 1) {
+      timeout = setTimeout(() => {
+        setIsTransitioning(false);
+        setIndex(1);
+      }, 700);
+    }
+    return () => clearTimeout(timeout);
+  }, [index, numItems]);
+
+  // Re-enable transition after jump
+  useEffect(() => {
+    if (!isTransitioning) {
+      const raf = requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setIsTransitioning(true);
+        });
+      });
+      return () => cancelAnimationFrame(raf);
+    }
+  }, [isTransitioning]);
 
   return (
     <section id="homes-designed" style={{
@@ -126,20 +153,18 @@ const CarouselSection = ({ setIsOpen }) => {
               gap: '16px'
             }}
           >
-            {items.map((img, idx) => {
-              const realIdx = idx === 0 ? galleryImages.length - 1 : idx === items.length - 1 ? 0 : idx - 1;
-              return (
+            {extendedImages.map((img, idx) => (
               <div 
                 key={idx} 
                 className="relative flex-shrink-0 group overflow-hidden bg-gray-200 cursor-pointer"
                 style={{ width: 'var(--slide-w)', aspectRatio: '16/9' }}
-                onClick={() => setSelectedImgIndex(realIdx)}
+                onClick={() => setSelectedImgIndex(getRealIndex(idx))}
               >
                 <Image
                   src={img.src}
-                  alt={img.alt || `Gallery Image ${realIdx + 1}`}
+                  alt={img.alt || `Gallery Image ${idx + 1}`}
                   fill
-                  priority={idx === 0 || idx === 1 || Math.abs(idx - index) <= 1}
+                  priority={idx === 0 || idx === 1 || Math.abs(idx - index) <= 1} // Preload active and adjacent images for instant rendering
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 65vw, 900px"
                   className="object-cover select-none pointer-events-none transition-transform duration-[800ms] ease-out group-hover:scale-110"
                 />
@@ -152,7 +177,7 @@ const CarouselSection = ({ setIsOpen }) => {
                     
                     {/* Progress Bar Container */}
                     <div className="absolute bottom-0 left-0 right-0 h-1 md:h-1.5 bg-white/20">
-                      {idx === index && isTransitioning && (
+                      {getRealIndex(idx) === getRealIndex(index) && (
                         <div 
                           className="h-full bg-white" 
                           style={{
@@ -172,7 +197,7 @@ const CarouselSection = ({ setIsOpen }) => {
                   Artistic Impression
                 </div>
               </div>
-            )})}
+            ))}
           </div>
         </div>
 
