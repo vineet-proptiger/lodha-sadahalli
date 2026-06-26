@@ -11,7 +11,7 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SERIF = 'var(--font-serif), Cormorant Garamond, serif'
 
-const PREVIEW_TEXT = `Welcome to Lodha Sadahalli at Devanahalli, North Bengaluru—an iconic Scottish Castle-inspired luxury township crafted for those who aspire to live exceptionally. Spread across 80 acres, this landmark development draws inspiration from the timeless grandeur of Scotland's Balmoral Castle, blending neo-classical architecture with modern luxury. Discover spacious 3 & 4 BHK residences set amidst 85% open green spaces, landscaped gardens, and curated lifestyle experiences. Enjoy world-class amenities, a grand clubhouse, Saint Amand-managed hospitality services, and seamless connectivity to Kempegowda International Airport.`
+const PREVIEW_TEXT = `Welcome to Lodha Sadahalli at Devanahalli, North Bengaluru—an iconic Scottish Castle-inspired luxury township crafted for those who aspire to live exceptionally. Spread across 70 acres, this landmark development draws inspiration from the timeless grandeur of Scotland's Balmoral Castle, blending neo-classical architecture with modern luxury. Discover spacious 3 & 4 BHK residences set amidst 85% open green spaces, landscaped gardens, and curated lifestyle experiences. Enjoy world-class amenities, a grand clubhouse, Saint Amand-managed hospitality services, and seamless connectivity to Kempegowda International Airport.`
 
 const MORE_TEXT = `Register Your Interest Today to Access Pre-Launch Pricing, Exclusive Offers & Priority Unit Selection.`
 
