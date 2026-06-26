@@ -118,7 +118,7 @@ const IconWaves = () => (
 
 const highlights = [
   { title: 'CASTLE-INSPIRED ARCHITECTURE', desc: 'Timeless Neo-Classical Design Inspired by Scotland', Icon: IconHome },
-  { title: '80-ACRE LUXURY TOWNSHIP', desc: "One of North Bengaluru's Largest Luxury Communities", Icon: IconBuilding },
+  { title: '70-ACRE LUXURY TOWNSHIP', desc: "One of North Bengaluru's Largest Luxury Communities", Icon: IconBuilding },
   { title: '85% OPEN SPACES', desc: 'Green Boulevards, Landscapes & Open Views', Icon: IconTrees },
   { title: 'LOW-DENSITY MASTERPLAN', desc: 'Designed for Space, Privacy & Peaceful Living', Icon: IconWind },
   { title: 'AIRPORT CONNECTIVITY', desc: '10-12 Minutes from Kempegowda International Airport', Icon: IconLightning },

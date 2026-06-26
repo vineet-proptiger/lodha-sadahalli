@@ -14,7 +14,7 @@ const highlights = [
     icon: <Trophy {...highlightIconProps} />,
   },
   {
-    text: <>80-ACRE LUXURY TOWNSHIP<br /><span style={{ color: '#4b5563', fontSize: '11.5px', fontWeight: 500, marginTop: '2px', display: 'block' }}>One of North Bengaluru's Largest Luxury Communities</span></>,
+    text: <>70-ACRE LUXURY TOWNSHIP<br /><span style={{ color: '#4b5563', fontSize: '11.5px', fontWeight: 500, marginTop: '2px', display: 'block' }}>One of North Bengaluru's Largest Luxury Communities</span></>,
     icon: <Building {...highlightIconProps} />,
   },
   {

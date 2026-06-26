@@ -210,7 +210,7 @@ export default function Hero({ setIsOpen }) {
             borderRight: '1px solid rgba(20,17,13,0.1)',
           }}>
             {[
-              { val: '80', lbl: 'Acres Township' },
+              { val: '70', lbl: 'Acres Township' },
               { val: '3, 3.5 & 4 BHK', lbl: 'Ultra Luxury Aprt' },
               { val: 'Adjacent To Airport', lbl: 'Location Advantage' },
               { val: '₹3.1 Cr*', lbl: 'Starting Price' },
@@ -260,7 +260,7 @@ export default function Hero({ setIsOpen }) {
             <div style={{ textAlign: 'center', marginBottom: '10px' }}>
               <p style={{ whiteSpace: 'nowrap', fontFamily: F_SANS, fontSize: '14px', fontWeight: 700, color: '#FFD700', letterSpacing: '0.06em', background: 'rgba(0,0,0,0.35)', padding: '10px 16px', borderRadius: '6px', display: 'inline-block', border: '1px solid rgba(255, 215, 0, 0.2)' }}>
                 EOI Window Now Open With<br/>
-                <span style={{ color: '#fff', fontSize: '16px', marginTop: '4px', display: 'block', whiteSpace: 'normal' }}>Priority Allotment <br />₹10 Lacs*</span>
+                <span style={{ color: '#fff', fontSize: '16px', marginTop: '4px', display: 'block', whiteSpace: 'normal' }}>Priority Allotment <br />₹5 Lacs*</span>
               </p>
             </div>
 

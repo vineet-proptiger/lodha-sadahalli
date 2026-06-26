@@ -89,6 +89,17 @@ const Hero = ({ setIsOpen }) => {
           line-height: 1.4;
         }
 
+        @keyframes livepulse {
+          0%  { box-shadow:0 0 0 0 rgba(212,175,55,0.6); }
+          70% { box-shadow:0 0 0 6px rgba(212,175,55,0); }
+          100%{ box-shadow:0 0 0 0 rgba(212,175,55,0); }
+        }
+        @keyframes textBling {
+          0% { opacity: 0.7; text-shadow: 0 0 4px rgba(212,175,55,0.5); }
+          50% { opacity: 1; text-shadow: 0 0 14px rgba(212,175,55,1); }
+          100% { opacity: 0.7; text-shadow: 0 0 4px rgba(212,175,55,0.5); }
+        }
+
         @keyframes heroPriceBlink {
           0%, 75% { 
             opacity: 1; 
@@ -361,7 +372,7 @@ const Hero = ({ setIsOpen }) => {
         {/* Bullet Points */}
           <div className="hero-bullets" style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {[
-              '80 Acre Ultra Luxury Township',
+              '70 Acre Ultra Luxury Township',
               'North Bengaluru Fastest Growing Corridor',
               // '10 Mins From Airport',
               '85% Open & Green Spaces',
@@ -380,20 +391,32 @@ const Hero = ({ setIsOpen }) => {
         </div>
 
         {/* Restored Subtitle */}
-        <p className="hero-price-line" style={{ marginBottom: '0px' }}>
+        {/* Restored Subtitle */}
+        <p className="hero-price-line" style={{ marginBottom: '0px', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
           Premium 3, 3.5 &amp; 4 BHK Luxury Residences
+          <span style={{ fontWeight: '700', whiteSpace: 'nowrap', display: 'flex', gap: '4px', alignItems: 'center' }}>
+            - Starts 
+            <span style={{
+              color: '#ffffff',
+              animation: 'heroPriceBlink 1.4s infinite',
+              display: 'inline-block'
+            }}>
+              ₹ 3.1 Cr*
+            </span>
+          </span>
         </p>
 
         {/* CTA Row */}
         <div className="hero-cta-row" style={{ marginTop: '16px' }}>
 
-          {/* Button 1 — Static Price Badge */}
-          <div
+          {/* Button 1 — EOI Button */}
+          <button
+            onClick={() => setIsOpen(true)}
             className="btn-gold-outline hero-btn-one"
-            style={{ fontSize: '14px', padding: '11px 22px', pointerEvents: 'none', fontWeight: '700', textTransform: 'none' }}
+            style={{ fontSize: '14px', padding: '11px 22px', fontWeight: '700', textTransform: 'none', cursor: 'pointer', display: 'inline-block' }}
           >
-            Price starts <span className="hero-price-amt" style={{ fontSize: '15px', marginLeft: '6px' }}>₹ 3.1 Cr*</span>
-          </div>
+            Book @ ₹5L EOI
+          </button>
 
           {/* Button 2 — Popup Trigger (global btn-brand) */}
           <button
