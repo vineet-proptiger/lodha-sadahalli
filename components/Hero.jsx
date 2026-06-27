@@ -256,9 +256,10 @@ const Hero = ({ setIsOpen }) => {
             padding: 24px 20px 28px !important;
           }
 
-          .hero-title, .hero-subtitle, .hero-price-line, .hero-price-amt, .hero-bullet-text {
+          .hero-title, .hero-subtitle, .hero-price-line, .hero-price-amt, .hero-bullet-text, .hero-price-digits {
             color: #111827 !important;
             text-shadow: none !important;
+            animation: none !important;
           }
 
           .hero-subtitle {
@@ -396,8 +397,7 @@ const Hero = ({ setIsOpen }) => {
           Premium 3, 3.5 &amp; 4 BHK Luxury Residences
           <span style={{ fontWeight: '700', whiteSpace: 'nowrap', display: 'flex', gap: '4px', alignItems: 'center' }}>
             - Starts 
-            <span style={{
-              color: '#ffffff',
+            <span className="hero-price-digits" style={{
               animation: 'heroPriceBlink 1.4s infinite',
               display: 'inline-block'
             }}>
