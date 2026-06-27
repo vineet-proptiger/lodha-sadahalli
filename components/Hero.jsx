@@ -259,7 +259,6 @@ const Hero = ({ setIsOpen }) => {
           .hero-title, .hero-subtitle, .hero-price-line, .hero-price-amt, .hero-bullet-text, .hero-price-digits {
             color: #111827 !important;
             text-shadow: none !important;
-            animation: none !important;
           }
 
           .hero-subtitle {
@@ -292,7 +291,7 @@ const Hero = ({ setIsOpen }) => {
             justify-content: center !important;
             text-align: center;
             padding: 12px 10px !important;
-            font-size: 11px !important;
+            font-size: 14px !important;
             white-space: normal !important;
             box-shadow: none !important;
           }
