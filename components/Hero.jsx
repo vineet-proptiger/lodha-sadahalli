@@ -392,13 +392,15 @@ const Hero = ({ setIsOpen }) => {
 
         {/* Restored Subtitle */}
         {/* Restored Subtitle */}
-        <p className="hero-price-line" style={{ marginBottom: '0px', display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+        <p className="hero-price-line" style={{ marginBottom: '0px' }}>
           Premium 3, 3.5 &amp; 4 BHK Luxury Residences
-          <span style={{ fontWeight: '700', whiteSpace: 'nowrap', display: 'flex', gap: '4px', alignItems: 'center' }}>
-            - Starts 
+          <span style={{ marginLeft: '6px' }}>
+            Price Starts 
             <span className="hero-price-digits" style={{
               animation: 'heroPriceBlink 1.4s infinite',
-              display: 'inline-block'
+              display: 'inline-block',
+              marginLeft: '4px',
+              fontWeight: '700'
             }}>
               ₹ 3.1 Cr*
             </span>
